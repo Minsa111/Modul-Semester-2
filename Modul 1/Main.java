@@ -14,7 +14,7 @@ class Main {
         Method NIM  = new Method();
         System.out.println("---Register---");
         Scanner in=new Scanner(System.in);        
-        System.out.println("username:");
+        System.out.println("Name:");
         username = in.nextLine();
         name.setName(username);
 
