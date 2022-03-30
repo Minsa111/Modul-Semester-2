@@ -16,8 +16,8 @@ public class Mahasiswa {
     public void setNIM(String nim){
         this.nim = nim;
     }
-    //setter------------------------------------
 
+    //getter------------------------------------
     public String getName(){
         return username;
     }
