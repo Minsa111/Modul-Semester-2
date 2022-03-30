@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Method {
+public class Mahasiswa {
     private String username;
     private String password;
     private String nim;
@@ -29,9 +29,9 @@ public class Method {
     }
     public void daftar(){
         int count, i=0;
-        Method name = new Method();
-        Method pass = new Method();
-        Method NIM  = new Method();
+        Mahasiswa name = new Mahasiswa();
+        Mahasiswa pass = new Mahasiswa();
+        Mahasiswa NIM  = new Mahasiswa();
         System.out.println("---Register---");
         Scanner in=new Scanner(System.in);        
         System.out.println("Name:");

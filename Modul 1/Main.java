@@ -5,7 +5,7 @@ class Main {
 
     
     public static void main(String[] args) {
-        Method Mahasiswa = new Method();
+        Mahasiswa Mahasiswa = new Mahasiswa();
         Mahasiswa.daftar();
        
 
