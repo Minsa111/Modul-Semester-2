@@ -34,12 +34,12 @@ public class Mahasiswa {
         Mahasiswa NIM  = new Mahasiswa();
         System.out.println("---Register---");
         Scanner in=new Scanner(System.in);        
-        System.out.println("Name:");
+        System.out.print("Name:");
         username = in.nextLine();
         name.setName(username);
 
         while (i==0){
-            System.out.println("NIM     :");
+            System.out.print("NIM     :");
             nim = in.nextLine();
             count=nim.length();
             if (count == 15){
@@ -51,7 +51,7 @@ public class Mahasiswa {
         }
         i=0;
         while (i==0){
-            System.out.println("password:");
+            System.out.print("password:");
             password = in.nextLine();
             count=password.length();
             if(count >=8){
@@ -59,7 +59,7 @@ public class Mahasiswa {
                 break;
             }
             else
-            {System.out.println("Password has to be at least 8 characters");
+            {System.out.print("Password has to be at least 8 characters");
             }
         }
         in.close();
