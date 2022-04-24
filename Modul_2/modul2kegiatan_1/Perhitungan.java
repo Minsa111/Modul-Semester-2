@@ -1,4 +1,5 @@
-package Kegiatan_1;
+package Modul_2.modul2kegiatan_1;
+
 import java.util.Scanner;
 
 public class Perhitungan{
