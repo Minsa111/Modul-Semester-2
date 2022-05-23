@@ -4,7 +4,6 @@ package Childss;
 import Parentss.Parent;
 
 public class Child extends Parent{
-int round;
 
 
     public Child(){
