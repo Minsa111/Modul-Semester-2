@@ -1,13 +1,12 @@
-package Modul5.Kegiatan1;
+package Modul4.Kegiatan1;
 
 import java.util.Scanner;
 
 import static java.lang.Math.pow;
 
-public class Kerucut extends BangunRuang{
-    double Volume, Luas;
-    double r, t, s;
+public class Bola extends BangunRuang {
 
+double Volume, Luas, r;
     public void setVolume(double Volume){
         this.Volume = Volume;
     }
@@ -24,17 +23,16 @@ public class Kerucut extends BangunRuang{
         return Luas;
     }
     public void main(){
+
+        System.out.println("\n\n===Bola===\n");
         Scanner in = new Scanner(System.in);
         System.out.print("Input Radius\t\t: ");
         r = in.nextDouble();
-        System.out.print("Input Tinggi\t\t: ");
-        t = in.nextDouble();
-        System.out.print("Input Tinggi Samping: ");
-        s = in.nextDouble();
 
-        Volume  = 1/3 * 22/7 * pow(r, 2) * t;
+
+        Volume  = (double)4/3 * 22/7 * pow(r,3);
         setVolume(Volume);
-        Luas    = 22/7 * r * (r+s);
+        Luas    = (double)4* 22/7 * pow(r,2);
         setLuas(Luas);
 
     }
