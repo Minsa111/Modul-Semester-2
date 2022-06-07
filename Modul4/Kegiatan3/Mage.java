@@ -1,13 +1,13 @@
 package Modul4.Kegiatan3;
 
-public class Assassin extends Hero implements CriticalDamage{
+public class Mage extends Hero implements MagicalDamage {
 
-    public String name = "Assassin";
-    public double healthPoint = 3000;
-    public double defense = 300;
-    public double attackDamage = 800;
+    public String name = "Mage";
+    public double healthPoint = 2500;
+    public double defense = 200;
+    public double attackDamage = 700;
 
-    final public double lvlhp = 90, lvldef = 15, lvlatt = 30;
+    final public double lvlhp = 85, lvldef = 10, lvlatt = 35;
 
     @Override
     public void spawnIntro(int level) {
@@ -26,6 +26,8 @@ public class Assassin extends Hero implements CriticalDamage{
         }else if (level==0){
             setAttackDamage(getAttackDamage() + bonusDamage * getAttackDamage());
         }
-        System.out.println("Assassin\t\t: Silence as a shadow, Fast as the lightning...");
+        System.out.println("Mage\t\t\t: Feel the wrath of my magic...");
     }
+
 }
+
