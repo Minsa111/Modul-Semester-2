@@ -1,6 +1,6 @@
 package Modul4.Kegiatan2;
 
-public class WindGirl {
+public class WindGirl extends Hero{
 
     public void readHero() {
         JettAbility ability = new JettAbility();
@@ -15,7 +15,8 @@ public class WindGirl {
         mobility.Jump();
         mobility.Crouch();
     }
-    public void Name(){
-        System.out.println("Jett");
+    public void profile(int a, String b){
+        System.out.println("\nName\t: Jett");
+        System.out.println("Height\t= "+a +"\nProfile\t= "+b);
     }
 }
