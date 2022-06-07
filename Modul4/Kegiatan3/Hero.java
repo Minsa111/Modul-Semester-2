@@ -1,7 +1,8 @@
 package Modul4.Kegiatan3;
 
 public abstract class Hero {
-    private double healthPoint,attackDamage, defense;
+    private String name;
+    private double healthPoint,attackDamage, defense, realDamage;
     private int level;
     private boolean lifeStatus;
 
@@ -17,8 +18,24 @@ public abstract class Hero {
 
     }
 
-    public void reviewDamage(double damage){
-        this.attackDamage = damage;
+    public void reviewDamage(double damage, double defense){
+        realDamage = damage - defense;
+    }
+
+    public void setRealDamage(double realDamage) {
+        this.realDamage = realDamage;
+    }
+
+    public double getRealDamage() {
+        return realDamage;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setHealthPoint(double healthPoint){
@@ -59,6 +76,6 @@ public abstract class Hero {
     public boolean isLifeStatus() {
         return lifeStatus;
     }
-    public abstract void spawnIntro(int level);
+    public abstract void summonHero(int level);
 
 }
