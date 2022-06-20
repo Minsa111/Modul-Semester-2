@@ -1,4 +1,4 @@
-package Modul_2.modul2kegiatan_2;
+package Modul2.modul2kegiatan_2;
 import java.util.Scanner;
 
 public class the_other {
