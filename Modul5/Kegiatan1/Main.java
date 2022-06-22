@@ -11,8 +11,10 @@ public class Main {
         int luastanah[] = new int[3];
         boolean fax=true;
         int i = 0;
+        int count = 1;
     try {
         while (fax) {
+            System.out.println("=== Data ke : " + count+++" ===");
             System.out.print("Alamat\t\t: ");
             data.setAlamat(in.next());
             System.out.print("Panjang tanah\t: ");
